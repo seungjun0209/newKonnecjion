@@ -1,0 +1,59 @@
+.buttons{
+  width: 700px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-color: white;
+  margin-top:20px;
+  }
+  
+.next{
+  display: block;
+  width: 100px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 2px solid #FE5454;
+  border-radius: 15px;
+  margin-left:20px;
+}
+
+.next a{
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
+  color:#FE5454;
+
+  text-decoration-line: none;
+  text-align: center;
+}
+
+.finish{
+  display: block;
+  width: 100px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 2px solid #2E81E2;
+  border-radius: 15px;
+}
+
+.finish a{
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
+  color:#2E81E2;
+
+  text-decoration-line: none;
+  text-align: center;
+}

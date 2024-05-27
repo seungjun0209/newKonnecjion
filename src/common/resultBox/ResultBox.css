@@ -1,0 +1,97 @@
+/* .result-box {
+  margin: auto;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+} */
+
+.line {
+  width: 900px;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  margin-bottom: 35px;
+}
+
+.box-light {
+  background: rgba(217, 217, 217, 0.41);
+}
+
+.box-dark {
+  background: rgba(217, 217, 217, 0.77);
+}
+
+.box1 {
+  width: 430px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.box2 {
+  width: 430px;
+  height: 250px;
+}
+
+.box3 {
+  width: 900px;
+  height: 250px;
+}
+
+.box4 {
+  width: 430px;
+  height: 250px;
+  margin-right: 40px;
+}
+
+.box5 {
+  width: 430px;
+  height: 250px;
+}
+
+.result-title {
+  margin-top: 20px;
+  margin-left: 20px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.add-mark {
+  display: inline-block;
+}
+
+.lexical-level {
+  display: block;
+  margin-left: 20px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 90%;
+  color: #5f5f5f;
+}
+
+.deeplTrans {
+  margin-top: 15px;
+  margin-left: 20px;
+
+  width: 90%;
+  height: 70%;
+  overflow: auto;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lexical-level {
+  display: block;
+  margin-left: 20px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 90%;
+  color: #5f5f5f;
+}

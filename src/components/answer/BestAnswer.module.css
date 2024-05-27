@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+.best{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height:164px;
+    background-color:#E2E2E2 ;
+    border-radius: 25px;
+    margin-top:-6px;
+  }
+.best p{
+    text-align: left;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1em;
+    position: relative;
+    top:10%;
+    left: 0.5%;
+  }
+.deelptext{
+  width: 95%;
+  height:60%;
+
+  overflow: auto;
+  padding:1.5%;
+}
+
+.deelptext div{
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1em;
+}

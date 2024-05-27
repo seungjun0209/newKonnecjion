@@ -1,0 +1,50 @@
+/* .transSubmit{
+    border: 2px solid #2E81E2;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+
+    position: absolute;
+    left:48%;
+    display: block;
+    background-color: #ffffff;
+  }
+.transSubmit a{
+    display: block;
+    color:#2E81E2;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 4px;
+    text-decoration-line: none;
+    text-align: center ;
+  } */
+  
+.submitbox{
+  width: 900px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-color: white;
+  }
+
+.transSubmit a{
+  display: block;
+  width: 100px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 2px solid #2E81E2;
+  border-radius: 15px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
+  color:#2E81E2;
+
+  text-decoration-line: none;
+  text-align: center;
+  padding-top:6px;
+}

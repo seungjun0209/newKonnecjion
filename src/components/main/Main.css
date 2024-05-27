@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+.Main {
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background: #ffffff;
+}
+
+.intro-explan {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.intro-site {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 110%;
+
+  margin-top: 30px;
+  text-align: center;
+
+  color: #5f5f5f;
+}
+
+.circle {
+  border-radius: 300px 300px 0px 0px;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+
+  background: rgba(62, 151, 255, 0.65);
+}
+
+.startButton {
+  width: 130px;
+  height: 50px;
+
+  margin-top: 23%;
+  background: #ffffff;
+  border: 3px solid #81bbff;
+  border-radius: 20px;
+
+  /* font-family: "Gugi", sans-serif; */
+  /* font-family: "Black Han Sans", sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 150%;
+  font-style: normal;
+}

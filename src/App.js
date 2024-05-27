@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Main from "./components/main/Main";
+import Input from "./components/input/Input";
+import Result from "./components/result/Result";
+import MainTrans from "./components/pages/MainTrans"
+import MainAns from "./components/answer/MainAns"
 
-function App() {
+import TranslateComponent from"./components/result/testtest"
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/Input" element={<Input />}></Route>
+        <Route path="/Result-page" element={<Result />}></Route>
+        <Route path="/Translation" element={<MainTrans />}></Route>
+        <Route path="/answer" element={<MainAns />}></Route>
+        <Route path="/test" element={<TranslateComponent />}></Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

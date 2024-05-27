@@ -1,0 +1,52 @@
+.ui-tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.button-set {
+  border: 0;
+  background-color: transparent;
+}
+
+.button-ico {
+  background-image: url(./bang.png);
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+}
+
+.ui-tooltip div[data-tooltip-id] {
+  position: absolute;
+  left: -13px;
+  top: 33px;
+
+  width: 175px;
+  padding: 8px 8px 8px 8px;
+
+  border: 1px solid #333;
+  background: #fff;
+
+  box-shadow: px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ui-tooltip div[data-tooltip-id]::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 1px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #333;
+  border-color: #333 transparent transparent #333;
+  background: #fff;
+  transform: rotate(45deg) translateY(-100%);
+}
+
+.span-text {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5f5f5f;
+  font-size: 90%;
+}

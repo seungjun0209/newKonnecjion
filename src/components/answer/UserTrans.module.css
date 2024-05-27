@@ -1,0 +1,21 @@
+.usertrans{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height:130px;
+    background-color:#CBE9FF ;
+    border-radius: 25px;
+    margin-top: 30px;
+  }
+.usertrans p{
+    text-align: left;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1em;
+    position: relative;
+    top:15%;
+    left: 3%;
+    color: #020202;
+    width: 95%;
+    height: 80%;
+    overflow:auto;
+  }

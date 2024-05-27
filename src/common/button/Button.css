@@ -1,0 +1,12 @@
+.button-box {
+  width: 900px;
+  margin: auto;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  background-color: white;
+}
