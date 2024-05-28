@@ -1,7 +1,7 @@
 import "./ResultBox.css";
 import ToolTip from "./toolTip/ToolTip";
 import ToolTip2 from "./toolTip/ToolTip2";
-// import Analyze from "../../components/result/analyze/Analyze";
+import SentenceLevel from "../sticks/SentenceLevel";
 
 export default function ResultBox({ translatedText }) {
   return (
@@ -12,13 +12,23 @@ export default function ResultBox({ translatedText }) {
         </div>
         <div className="result-box box-dark box2">
           <div className="result-title">문장 수준</div>
+          <span className="lexical-level">
+            숫자가 높을 수록 문장의 난이도가 높습니다
+          </span>
+          <SentenceLevel />
         </div>
       </div>
       <div className="line">
         <div className="result-box box-light box3">
-          <div className="result-title add-mark">다빈도 어휘</div>
-          <ToolTip2 />
-          {/* <Analyze /> */}
+          <div className="result-title add-mark">번역</div>
+          <ToolTip />
+          {translatedText && (
+            <div className="deeplTrans">
+              {translatedText.split("\n").map((line, index) => (
+                <div key={index}>{line}</div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <div className="line">
@@ -29,15 +39,9 @@ export default function ResultBox({ translatedText }) {
           </span>
         </div>
         <div className="result-box box-dark box5">
-          <div className="result-title add-mark">번역</div>
-          <ToolTip />
-          {translatedText && (
-            <div className="deeplTrans">
-              {translatedText.split("\n").map((line, index) => (
-                <div key={index}>{line}</div>
-              ))}
-            </div>
-          )}
+          <div className="result-title add-mark">다빈도 어휘</div>
+          <ToolTip2 />
+          {/* <Analyze /> */}
         </div>
       </div>
     </div>
