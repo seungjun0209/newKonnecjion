@@ -1,6 +1,6 @@
 .translationText {
-  width: 77%;
-  height: 120px;
+  width: 76%;
+  height: 110px;
   background-color: #e2e2e2;
   border-radius: 25px;
   margin-top: 10px;
@@ -10,7 +10,7 @@
   border: none;
   outline: none;
   resize: none;
-  padding: 1.5%;
+  padding: 2%;
   font-size: 1.1em;
   font-family: "Noto Sans KR", sans-serif;
 

@@ -4,7 +4,7 @@ import ToolTip2 from "./toolTip/ToolTip2";
 import SentenceLevel from "../sticks/SentenceLevel";
 import LexiconLevel from "../sticks/LexiconLevel";
 
-export default function ResultBox({ anaylzeSentence }, { translatedText }) {
+export default function ResultBox({ anaylzeSentence, translatedText }) {
   return (
     <div>
       <div className="line">

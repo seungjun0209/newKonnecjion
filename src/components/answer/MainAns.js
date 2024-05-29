@@ -34,6 +34,11 @@ export default function MainAns(){
         }
     }, [targetLang]);
 
+    // 초기화 함수
+    const handleReset = () => {
+        localStorage.removeItem('translatedText'); 
+    };
+
 
     return (
         <div>
@@ -42,7 +47,7 @@ export default function MainAns(){
             <ExplainText1 />
             <UserTrans translatedText={userText} />
             <BestAnswer deeplTrans={deeplTrans} />
-            <Finish></Finish>
+            <Finish onReset={handleReset} />
             {/* <Next></Next> */}
         </div>
     );
