@@ -51,13 +51,13 @@ function Input() {
           className="input-text"
           type="text"
           placeholder="텍스트를 입력하세요."
-          maxlength="300"
+          maxlength="500"
           onChange={onInputHandler}
           onKeyUp={checkCode}
           value={text}
         />
         <div className="count-box">
-          <span className="input-count">{inputCount} / 300</span>
+          <span className="input-count">{inputCount} / 500</span>
         </div>
       </div>
       <div className="button-box">

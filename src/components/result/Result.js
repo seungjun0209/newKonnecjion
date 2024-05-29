@@ -63,7 +63,11 @@ function Result() {
           초기화
         </button>
       </div>
-      <ResultBox translatedText={translatedText} error={error} />
+      <ResultBox
+        anaylzeSentence={userText}
+        translatedText={translatedText}
+        error={error}
+      />
       <div className="button-box">
         <button className="button-text button-home" onClick={goToHome}>
           홈으로

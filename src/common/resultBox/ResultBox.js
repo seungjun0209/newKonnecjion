@@ -2,8 +2,9 @@ import "./ResultBox.css";
 import ToolTip from "./toolTip/ToolTip";
 import ToolTip2 from "./toolTip/ToolTip2";
 import SentenceLevel from "../sticks/SentenceLevel";
+import LexiconLevel from "../sticks/LexiconLevel";
 
-export default function ResultBox({ translatedText }) {
+export default function ResultBox({ anaylzeSentence }, { translatedText }) {
   return (
     <div>
       <div className="line">
@@ -15,7 +16,7 @@ export default function ResultBox({ translatedText }) {
           <span className="lexical-level">
             숫자가 높을 수록 문장의 난이도가 높습니다
           </span>
-          <SentenceLevel />
+          <SentenceLevel anaylzeSentence={anaylzeSentence} />
         </div>
       </div>
       <div className="line">
@@ -37,6 +38,7 @@ export default function ResultBox({ translatedText }) {
           <span className="lexical-level">
             값이 1에 가깝거나 1을 넘어설 경우 문장의 난이도가 높습니다.
           </span>
+          <LexiconLevel />
         </div>
         <div className="result-box box-dark box5">
           <div className="result-title add-mark">다빈도 어휘</div>
