@@ -51,7 +51,7 @@ function Input() {
           className="input-text"
           type="text"
           placeholder="텍스트를 입력하세요."
-          maxlength="500"
+          maxLength="500"
           onChange={onInputHandler}
           onKeyUp={checkCode}
           value={text}

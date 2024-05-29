@@ -13,6 +13,11 @@
   width: 120px;
 }
 
+.stick-name2 {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100px;
+}
+
 .stick-shape {
   appearance: none;
   margin-top: 3px;

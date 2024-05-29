@@ -38,12 +38,11 @@ export default function ResultBox({ anaylzeSentence }, { translatedText }) {
           <span className="lexical-level">
             값이 1에 가깝거나 1을 넘어설 경우 문장의 난이도가 높습니다.
           </span>
-          <LexiconLevel />
+          <LexiconLevel anaylzeSentence={anaylzeSentence} />
         </div>
         <div className="result-box box-dark box5">
           <div className="result-title add-mark">다빈도 어휘</div>
           <ToolTip2 />
-          {/* <Analyze /> */}
         </div>
       </div>
     </div>

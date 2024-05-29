@@ -52,7 +52,7 @@ const calculateSentenceScore = (text) => {
 
   const totalScore = lengthScore + kanjiScore;
 
-  return totalScore.toFixed(0); // 소수점 두 자리까지
+  return totalScore.toFixed(0);
 };
 
 export default function SentenceLevel(props) {
