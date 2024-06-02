@@ -6,8 +6,6 @@ import Result from "./components/result/Result";
 import MainTrans from "./components/pages/MainTrans"
 import MainAns from "./components/answer/MainAns"
 
-import TranslateComponent from"./components/result/testtest"
-
 const App = () => {
   return (
     <div className="App">
@@ -17,7 +15,6 @@ const App = () => {
         <Route path="/Result-page" element={<Result />}></Route>
         <Route path="/Translation" element={<MainTrans />}></Route>
         <Route path="/answer" element={<MainAns />}></Route>
-        <Route path="/test" element={<TranslateComponent />}></Route>
       </Routes>
     </div>
   );
