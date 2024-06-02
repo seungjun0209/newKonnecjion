@@ -64,7 +64,7 @@ function Result() {
         </button>
       </div>
       <ResultBox
-        anaylzeSentence={userText}
+        analyzeSentence={userText}
         translatedText={translatedText}
         error={error}
       />

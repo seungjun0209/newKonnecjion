@@ -16,7 +16,7 @@ export default function ToolTip2() {
       {visible && (
         <div data-tooltip-id="help">
           <span className="span-text">
-            JLPT 단어 N1~N3의 어휘를 바탕으로 한 분석 결과입니다.
+            일본어 품사 사전을 바탕으로 한 분석 결과입니다.
           </span>
         </div>
       )}
