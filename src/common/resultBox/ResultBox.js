@@ -4,6 +4,7 @@ import ToolTip2 from "./toolTip/ToolTip2";
 import SentenceLevel from "../sticks/SentenceLevel";
 import LexiconLevel from "../sticks/LexiconLevel";
 import AnalyzeKuromoji from "../../components/result/analyze/AnalyzeKuromoji";
+import BarGraph from "../sticks/BarGraph";
 
 export default function ResultBox({ analyzeSentence, translatedText }) {
   return (
@@ -45,6 +46,7 @@ export default function ResultBox({ analyzeSentence, translatedText }) {
         <div className="result-box box-dark box5">
           <div className="result-title add-mark">다빈도 어휘</div>
           <ToolTip2 />
+          <BarGraph analyzeSentence={analyzeSentence} />
         </div>
       </div>
     </div>

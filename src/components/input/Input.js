@@ -26,6 +26,9 @@ function Input() {
         text: "일본어 텍스트만 입력해주세요",
         icon: "error",
         confirmButtonText: "확인",
+        customClass: {
+          popup: "my-custom-class", // Apply custom class to the popup
+        },
       });
     }
   };

@@ -96,3 +96,7 @@
 
   resize: none;
 }
+
+.my-custom-class {
+  font-family: "Noto Sans KR", sans-serif;
+}
