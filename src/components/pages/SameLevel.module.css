@@ -10,9 +10,11 @@
 .sameLevel p {
   text-align: left;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   position: relative;
-  top: 40%;
-  left: 4%;
+  top: 10%;
+  left: 2%;
+  width:95%;
+  height:75%;
+  overflow: auto;
 }

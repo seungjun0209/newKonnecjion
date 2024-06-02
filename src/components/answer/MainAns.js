@@ -9,10 +9,15 @@ import SiteLogo from "../../common/siteLogo/SiteLogo.js"
 
 import { translateText } from '../result/deepltrans.js'; 
 
+import { loadSentences, getRandomSentence, getUserLevel } from '../../common/levelTrans/levelTrans.mjs';
+
 export default function MainAns(){
 
     const [userText, setUserText] = useState('');
     const [deeplTrans, setDeeplTrans] = useState('');
+
+    const [currentSentence, setCurrentSentence] = useState("");
+    const [userLevel] = useState(getUserLevel());
 
     const targetLang = 'JA';
 
@@ -39,6 +44,16 @@ export default function MainAns(){
         localStorage.removeItem('translatedText'); 
     };
 
+    const handleNextSentence = async () => {
+        const sentences = await loadSentences();
+        const newSentence = getRandomSentence(userLevel, sentences);
+        if (newSentence) {
+            setCurrentSentence(newSentence);
+        } else {
+            // alert("모든 문장을 사용했습니다.");
+        }
+    };
+
 
     return (
         <div>
@@ -47,7 +62,7 @@ export default function MainAns(){
             <ExplainText1 />
             <UserTrans translatedText={userText} />
             <BestAnswer deeplTrans={deeplTrans} />
-            <Finish onReset={handleReset} />
+            <Finish onNextSentence={handleNextSentence} onReset={handleReset} />
             {/* <Next></Next> */}
         </div>
     );

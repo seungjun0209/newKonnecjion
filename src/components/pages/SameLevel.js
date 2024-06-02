@@ -1,9 +1,11 @@
+import React from 'react';
 import styles from "./SameLevel.module.css";
 
-export default function sameLevel() {
+const SameLevel = ({ currentSentence}) => {
   return (
     <div className={styles.sameLevel}>
-      {/* <p>비슷한 수준의 문장입니다.</p> */}
+      <p>{currentSentence ? currentSentence : "문장을 불러오는 중..."}</p>
     </div>
   );
 }
+export default SameLevel;
